@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+body{
+    background-color: lightblue;
+    margin: 0;
+}
+.resume-page-content{
+    font-family: 'Lobster';
+    font-size: 3em;
+}
+.resume-page-content h1{
+    text-shadow: 4px 4px white;
+}
+.resume-page-content a{
+    text-decoration: none;
+}
+.resume-page-content a:hover{
+    text-decoration: underline;
+}

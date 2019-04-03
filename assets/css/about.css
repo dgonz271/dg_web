@@ -2,8 +2,9 @@
 
 body{
     background-color:#1f3c88;
+    background-image: url("C:\Users\gonza\Desktop\c-skyline.jpg");
     margin:0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lobster', 'Roboto', sans-serif;
 }
 .navbar-name{
     float: left;
@@ -13,13 +14,14 @@ body{
     margin-bottom: 2em;
 
 }
-
 .navbar-name a:hover{
     color:white;
+    text-shadow: 2px 2px black;
 }
 .navbar-container{
     position: absolute;
-    background-color: #c6cbef;
+    background-color: lightblue;
+    text-shadow: 2px 2px white;
     width: 100%;
 }
 .navbar-container a{
@@ -27,6 +29,7 @@ body{
     text-decoration: none;
     color: black;
     letter-spacing: 2px;
+    font-size: 1.5em;
 }
 .links li{
     list-style-type:none ;
@@ -41,4 +44,26 @@ body{
 }
 .links a:hover{
     color:white;
+    text-shadow: 2px 2px black;
+
+}
+.intro h1{
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 15px;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 3em;
+    top: 40%;
+    right: 35%;
+   
+}
+
+
+.about-me-text{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin:400px;
 }
