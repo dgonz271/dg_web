@@ -17,3 +17,25 @@ body{
 .portfolio-page-content a:hover{
     text-decoration: underline;
 }
+.repo-links{
+    display:block;
+}
+.repo-links li{
+    list-style-type:none;
+    margin: 3em;
+    font-family: 'Lobster';
+    font-size: 2em;
+}
+.repo-links :hover{
+    color: white;
+    text-shadow: 2px 2px black;
+
+}
+.repo-links a{
+    color: black;
+    text-shadow: 2px 2px white;
+    text-decoration: none;
+}
+.repo-links img{
+    border-radius: 40px;
+}

@@ -1,23 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
 
 body{
     background-color:#1f3c88;
-    background-image: url("C:\Users\gonza\Desktop\c-skyline.jpg");
+    /****Following 3 lines are a gradient****/
+    /*height: 720px ;
+    background-image: repeating-radial-gradient(lightblue, #1f3c88);
+    background-size: cover;
+    background-repeat: no-repeat;*/
+     
     margin:0;
     font-family: 'Lobster', 'Roboto', sans-serif;
 }
+/*-----------Name in Navbar----------*/
 .navbar-name{
     float: left;
     position: absolute;
     margin-top: 2em;
     margin-left: 2em;
     margin-bottom: 2em;
-
 }
 .navbar-name a:hover{
     color:white;
     text-shadow: 2px 2px black;
 }
+/*--------------Entire navbar section-----------------*/
 .navbar-container{
     position: absolute;
     background-color: lightblue;
@@ -31,6 +38,7 @@ body{
     letter-spacing: 2px;
     font-size: 1.5em;
 }
+/*--------------Just links in navbar-----------------*/
 .links li{
     list-style-type:none ;
     display: inline-block;
@@ -47,23 +55,60 @@ body{
     text-shadow: 2px 2px black;
 
 }
+/*-------------Front page under navbar-----------------*/
+
 .intro h1{
+    text-align: center;
     position: absolute;
     border: 2px solid white;
     border-radius: 15px;
     padding: 15px;
     color: white;
     text-shadow: 2px 2px black;
-    font-size: 3em;
-    top: 40%;
-    right: 35%;
-   
+    font-size: 5em;
+    margin-top: /*5em*/ 400px;
+    margin-left: /*7.5em*/400px;
+    margin-right: 400px;
+    /*top: 40%;
+    right: 35%;*/ 
 }
-
-
+/*-------------About page under navbar-----------------*/
+.about-title{
+    position: absolute;
+    margin-top: 20em;
+    margin-left: 15em;
+}
+.about-title h1{
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: /*60pt*/4.5em;
+    letter-spacing: 25px;
+}
 .about-me-text{
     position: absolute;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    margin:400px;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 15em;
+    margin-left: 50em;
+    margin-right: 10em;
 }
+.about-me-text p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.7em; 
+    color: white;
+    letter-spacing: 2px;
+    text-align: justify;
+
+}
+.about-me-text a{
+    text-decoration: none;
+    color: gray;
+    text-shadow: 2px 2px black;
+}
+.about-me-text a:hover{
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
