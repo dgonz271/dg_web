@@ -39,3 +39,8 @@ body{
 .repo-links img{
     border-radius: 40px;
 }
+.portfolio-page-content a.jump{
+   color: blue; 
+   scroll-behavior: auto;
+   
+}
