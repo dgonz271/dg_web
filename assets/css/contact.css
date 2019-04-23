@@ -1,21 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
 body{
     background: lightblue;
     margin: 0;
     display: block;
-    padding-left: 440px;    
-}
-.return{
-    font-size: 2em;
-    padding-left: 230px;
+    text-align: center;
 }
 .social{
     position: relative;
     transition: 0.5s ease;
     cursor: pointer;
     letter-spacing: 1em;
-    margin-left: 275px;
-    
-    
+    margin: 25px;
+    /*margin-left: 275px;*/
+}
+
+.social img.github{
+    border: 2px solid white;
+    border-radius: 30px;
 }
 .social img:hover{
     transform: scale(1.5, 1.5);
@@ -23,4 +25,25 @@ body{
     /*transform: translate(50px, 40px); */
     /** combine both scale and translate */
     /*transform: scale(1.5, 1.5) translate(50px, 40px);*/
+}
+
+.return{
+    font-family: 'Lobster';
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+
+}
+.return a{
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: black;
+    text-shadow: 2px 2px white;
+}
+.return a:hover{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px black;
 }

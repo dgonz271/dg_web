@@ -9,6 +9,7 @@
     </head>
 <!----------------BODY--------------->
 <body>
+    
     <!----------------FRONT PAGE NAVIGATION BAR--------------->
     <div class="navbar-container">
         <div class ="navbar-name">
@@ -17,7 +18,8 @@
         <div class ="navbar-links">
             <ul class ="links">
                 <li>
-                    <a href="about.html">About</a>
+                    <!--<a href="about.html">About</a>-->
+                    <a href="#about-jump">About</a>
                 </li>
                 <li>
                     <a href="assets/pdf/Daniel- Gonzalez.me-Resume.pdf" target="_blank">Resume</a>
@@ -26,16 +28,44 @@
                     <a href="pages/portfolio.html">Portfolio</a>
                 </li>
                 <li>
-                   <a href="pages/contact.html">Contact</a>
+                    <a href="pages/contact.html">Contact</a>
                 </li>
             </ul>
         </div>
-       
     </div>
     <!----------------FRONT PAGE UNDER NAVBAR--------------->
     <div class="intro">
         <h1>Welcome To My Website</h1>
     </div>
-    
+
+    <div class="about-section">
+        <span id="about-jump">
+            <!----------------Under navbar text--------------->
+            <div class="about-title"><h1>ABOUT</h1></div>
+            <div class="about-me-text">
+                <p>My name is Daniel Gonzalez. I am a second-year, computer science student at California State University, Los Angeles.
+                    I am a student who enjoys taking on new challenges; my latest one being web development. 
+                    However, most of my personal projects have been android applications which you can check out in the <a href="pages/portfolio.html">Portfolio tab</a> above.
+                    If you have any questions or comments, you can reach me through the <a href="pages/contact.html">Contact tab</a> in the toolbar above.
+                </p>
+            </div>
+        </span>
+    </div>
+    <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementsByClassName("navbar-container");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+    </script>
+</body>
+
 </body>
 </html>

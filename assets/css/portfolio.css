@@ -4,40 +4,135 @@ body{
     background-color: lightblue;
     margin: 0;
 }
-.portfolio-page-content{
+/******Portfolio Header******/
+.portfolio-header{
     font-family: 'Lobster';
     font-size: 2.5em;
 }
-.portfolio-page-content h1, h2{
+.portfolio-header h1{
     text-shadow: 4px 4px white;
-}
-.portfolio-page-content a{
-    text-decoration:none;
-}
-.portfolio-page-content a:hover{
-    text-decoration: underline;
-}
-.repo-links{
-    display:block;
-}
-.repo-links li{
-    list-style-type:none;
-    margin: 3em;
-    font-family: 'Lobster';
-    font-size: 2em;
-}
-.repo-links :hover{
-    color: white;
-    text-shadow: 2px 2px black;
+    border: 4px solid white;
+    border-radius: 20px;
+    padding: 10px 15px;
+    padding-right: 20px;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 10px;
 
 }
-.repo-links a{
+.portfolio-header p{
+    text-shadow: 2px 2px white;
+
+}
+
+/*****REPOSITORY FIRST ROW OF 3******/
+.repo-grid{
+    font-family: 'Lobster';
+}
+.repo-grid li{
+    display: inline-block;
+    font-size: 2em;
+    letter-spacing: 2.5px;
+
+}
+.repo-grid a{
+    text-decoration: none;
     color: black;
     text-shadow: 2px 2px white;
-    text-decoration: none;
 }
-.repo-links img{
+.repo-grid a:hover{
+    text-shadow: 2px 2px black;
+}
+.repo-grid img{
     border-radius: 40px;
+    border: 2px solid black;
+}
+.repo-grid img{
+    margin-bottom: 50px;
+}
+.repo-grid img.gif1{
+    margin-right: 205px;
+}
+.repo-grid img.gif3{
+    margin-left: 187px;
+}
+/****FIRST ROW REPOSITORY****/
+.first-row-repo-grid a.name1{
+    color: rgb(30, 28, 168);
+    margin-right: 185px;
+}
+
+.first-row-repo-grid a.name2{
+    color: rgb(128, 48, 219);
+    margin-left: 85px;
+    margin-right: 135px;
+}
+.first-row-repo-grid a.name3{
+    color: rgb(48, 65, 219);
+    margin-left: 140px;
+    margin-right: 50px;
+}
+.first-row-repo-grid a:hover{
+    color: white;
+}
+
+.first-row-repo-grid img.gif2{
+    border-radius: 47px;    
+}
+/*******Second Row Names********/
+.second-row-repo-grid a.name1{
+    color: rgb(4, 145, 63);
+    margin-right: 50px;
+}
+.second-row-repo-grid a.name2{
+    color: rgb(48, 65, 219);
+    margin-left: 60px;
+    margin-right: 110px;
+}
+.second-row-repo-grid a.name3{
+    color: rgb(4, 145, 63);
+    margin-left: 60px;
+    margin-right: 100px;
+}
+.second-row-repo-grid a:hover{
+    color: white;
+}
+/*******Third Row Name && GIF********/
+.third-row-repo-grid a.name1{
+    color: rgb(219, 145, 48);
+    margin-right: 25px;
+}
+.third-row-repo-grid a:hover{
+    color: white;
+}
+.third-row-repo-grid img.gif1{
+    margin-left: 223px;
+}
+
+
+
+/****Stuff at the bottom of the page*****/
+.portfolio-page-content{
+    font-family: 'Lobster';
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.portfolio-page-content a{
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: black;
+    text-shadow: 2px 2px white;
+    letter-spacing: 1px;
+}
+.portfolio-page-content a:hover{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+.portfolio-page-content h1, h2, a{
+    text-shadow: 4px 4px white;
 }
 .portfolio-page-content a.jump{
    color: blue; 
