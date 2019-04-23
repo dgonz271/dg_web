@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
 body{
-    background-color: lightblue;
+    background: linear-gradient(rgba(173, 216, 230, 0.829),rgba(173, 216, 230, 0.726)), url(../img/blogging-coding-copywriting-34140.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
 }
 /******Portfolio Header******/
@@ -99,7 +102,7 @@ body{
 }
 /*******Third Row Name && GIF********/
 .third-row-repo-grid a.name1{
-    color: rgb(219, 145, 48);
+    color: rgb(79, 48, 219);
     margin-right: 25px;
 }
 .third-row-repo-grid a:hover{

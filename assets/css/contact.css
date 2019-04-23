@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 body{
-    background: lightblue;
+    /*background: lightblue;*/
+    background: linear-gradient(rgba(207, 191, 191, 0.4),rgba(157, 179, 169, 0.4)), url(../img/communication-contact-conversation-33999.jpg);
+    background-size: cover;
+    background-position: center;
     margin: 0;
     display: block;
     text-align: center;
