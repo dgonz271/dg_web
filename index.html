@@ -6,33 +6,42 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Daniel Gonzalez (Index Page)</title>
         <link rel="stylesheet" type="text/css" href="assets/css/about.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="/assets/js/navbar.js"></script>
+
     </head>
 <!----------------BODY--------------->
 <body>
-    
     <!----------------FRONT PAGE NAVIGATION BAR--------------->
     <div class="navbar-container">
-        <div class ="navbar-name">
-            <a href="index.html">Daniel Gonzalez</a>
-        </div>
-        <div class ="navbar-links">
-            <ul class ="links">
-                <li>
-                    <!--<a href="about.html">About</a>-->
-                    <a href="#about-jump">About</a>
-                </li>
-                <li>
-                    <a href="assets/pdf/Daniel- Gonzalez.me-Resume.pdf" target="_blank">Resume</a>
-                </li>
-                <li>
-                    <a href="pages/portfolio.html">Portfolio</a>
-                </li>
-                <li>
-                    <a href="pages/contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+            <div class="name">
+                <a href="index.html">Daniel Gonzalez</a>
+            </div>
+            <div class="navbar">
+                <ul class="navbar-btn">
+                    <div class="group-ham">
+                        <div class="ham_menu"></div>
+                        <div class="ham_menu"></div>
+                        <div class="ham_menu"></div>
+                    </div>
+                </ul>
+                <ul class="full-navbar" id="full-nav">
+                    <li>
+                        <a href="#about-jump">About </a>
+                    </li>
+                    <li>
+                        <a href="assets/pdf/Daniel- Gonzalez.me-Resume.pdf" target="_blank"> Resume </a>
+                    </li>
+                    <li>
+                        <a href="pages/portfolio.html">Portfolio </a>
+                    </li>
+                    <li>
+                        <a href="pages/contact.html">Contact </a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
     <!----------------FRONT PAGE UNDER NAVBAR--------------->
     <div class="intro">
         <h1>Welcome To My Website</h1>
@@ -51,20 +60,7 @@
             </div>
         </span>
     </div>
-    <script>
-            window.onscroll = function() {myFunction()};
-            
-            var navbar = document.getElementsByClassName("navbar-container");
-            var sticky = navbar.offsetTop;
-            
-            function myFunction() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
-            }
-    </script>
+
 </body>
 
 </body>

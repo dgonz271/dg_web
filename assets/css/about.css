@@ -10,25 +10,14 @@ body{
     font-family: 'Lobster', 'Roboto', sans-serif;
 }
 
-/*-----------Name in Navbar----------*/
-.navbar-name{
-    float: left;
-    position: absolute;
-    margin-top: 2em;
-    margin-left: 2em;
-    margin-bottom: 2em;
-}
-.navbar-name a:hover{
-    color:white;
-    text-shadow: 2px 2px black;
-}
-/*--------------Entire navbar section-----------------*/
-.navbar-container{
-    position: absolute;
-    /*background-color: lightblue;*/
+
+/* NAVBAR STARTS */
+.navbar-container {
     background: rgba(173, 216, 230, 0.692);
-    text-shadow: 2px 2px white;
+    display: table;
     width: 100%;
+    position: fixed;
+    text-shadow: 2px 2px white;
 }
 .navbar-container a{
     /*background-color: aquamarine;*/
@@ -37,34 +26,80 @@ body{
     letter-spacing: 2px;
     font-size: 1.5em;
 }
-/**********************TESTING STICKYBAR********************************/
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-.sticky{
-padding-top: 60px;
+.name {
+    font-size: 1rem;
+    letter-spacing: 5px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    float: left;
 }
-/**********************TESTING STICKYBAR********************************/
-
-/*--------------Just links in navbar-----------------*/
-.links li{
-    list-style-type:none ;
-    display: inline-block;
-    margin-top: 1em;
-    margin-right: 2em;
-    margin-bottom: 1em;
-
+.name a {
+    margin-left: 3rem;
+    text-decoration: none;
 }
-.navbar-links ul{
-    float: right;
-}
-.links a:hover{
-    color:white;
+.name a:hover{
+    color: white !important;
     text-shadow: 2px 2px black;
-
+    font-weight: bold;
 }
+.navbar {
+    float: right;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block !important;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+.navbar li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 2rem;
+    letter-spacing: 5px;
+    margin-right: 2rem;
+}
+.navbar a:hover {
+    color: white !important;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+}
+ 
+/* HAMBURGER ICON */
+.navbar-btn{
+    padding-inline-start: 1px !important;
+    float: right;
+    display: none;
+}
+.ham_menu {
+    width: 35px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 0.5rem 0;
+    border-radius: 1px;
+    display: none;
+}
+/* HAMBURGER ICON */
+/*Javascript*/
+.hidehamburger{
+    visibility: hidden;
+}
+.exit-img{
+    background-image: url(/assets/img/exit.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+/* NAVBAR ENDS */
+
+
+
+
 /*-------------Front page under navbar-----------------*/
 
 .intro{
@@ -82,11 +117,6 @@ padding-top: 60px;
     text-shadow: 2px 2px black;
     font-size: 5em;
     letter-spacing: 5px;
-    /*margin-top: /*5em* 400px;
-    margin-left: /*7.5em*400px;
-    margin-right: 400px;*/
-    /*top: 40%;
-    right: 35%;*/ 
 }
 
 /*-------------About page under navbar-----------------*/
@@ -107,7 +137,7 @@ padding-top: 60px;
     letter-spacing: 25px;
 }
 .about-me-text{
-    position: absolute;
+    position: relative;
     float: right;
     border: 2px solid white;
     border-radius: 25px;
@@ -140,3 +170,73 @@ padding-top: 60px;
     float: left;
 }
 
+@media screen and (max-width: 800px)
+{
+    .ham_menu{
+        display: block !important;
+    }
+    .navbar-btn{
+        display: block;
+        margin-top: -2rem;
+    }
+   
+}
+@media screen and (min-width:800px) {
+    .full-navbar{
+        display: block !important;
+    }
+}
+@media screen and (max-width: 1500px)
+{
+ /*-------------About page under navbar-----------------*/
+ .about-title{
+    margin: 0;
+    text-align: center;
+    }
+.about-title h1{
+    margin-top: 4em;
+    padding-left: 60px;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 4em;
+    letter-spacing: 5px; 
+    }  
+.about-me-text{
+    margin: 400px 0px;
+    }
+.about-me-text p{
+    font-size: 1.5em; 
+    }
+}
+/* RESPONSIVE LAYER */
+@media screen and (max-width:800px) {
+    /******NAVBAR STUFF******/
+    .full-navbar{
+        display: none;
+    }
+    .navbar li{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        display: block;
+    }
+    .navbar a{
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 5px;
+        background: rgba(76, 59, 158, 0.514);
+    }
+    .ham_menu{
+        display: block !important;
+    }
+    .navbar-btn{
+        display: block;
+        margin-top: -2rem;
+    }
+    .navbar{
+        width: 100%;
+    }
+    /****** END OF NAVBAR STUFF******/
+    
+
+  }
+/* RESPONSIVE LAYER */
