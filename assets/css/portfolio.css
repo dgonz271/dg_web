@@ -7,12 +7,99 @@ body{
     background-repeat: no-repeat;
     margin: 0;
 }
+/* NAVBAR STARTS */
+.navbar-container {
+    background: rgba(177, 173, 230, 0.692);
+    display: table;
+    width: 100%;
+    position: fixed;
+    font-family: 'Lobster', 'Roboto', sans-serif;
+}
+.navbar-container a{
+    /*background-color: aquamarine;*/
+    text-decoration: none;
+    color: black;
+    text-shadow: 2px 2px white;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+}
+.name {
+    font-size: 1rem;
+    letter-spacing: 5px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    float: left;
+}
+.name a {
+    margin-left: 3rem;
+    text-decoration: none;
+}
+.name a:hover{
+    color: white !important;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+}
+.navbar {
+    float: right;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block !important;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+.navbar li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 2rem;
+    letter-spacing: 5px;
+    margin-right: 2rem;
+}
+.navbar a:hover {
+    color: white !important;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+}
+ 
+/* HAMBURGER ICON */
+.navbar-btn{
+    padding-inline-start: 1px !important;
+    float: right;
+    display: none;
+}
+.ham_menu {
+    width: 35px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 0.5rem 0;
+    border-radius: 1px;
+    display: none;
+}
+/* HAMBURGER ICON */
+/*Javascript*/
+.hidehamburger{
+    visibility: hidden;
+}
+.exit-img{
+    background-image: url(/assets/img/exit.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* NAVBAR ENDS */
+
+
 /******Portfolio Header******/
 .portfolio-header{
     font-family: 'Lobster';
     font-size: 2.5em;
 }
 .portfolio-header h1{
+    margin-top: 1.5em;
     text-shadow: 4px 4px white;
     border: 4px solid white;
     border-radius: 20px;
@@ -25,7 +112,6 @@ body{
 }
 .portfolio-header p{
     text-shadow: 2px 2px white;
-
 }
 
 /*****REPOSITORY FIRST ROW OF 3******/
@@ -114,7 +200,7 @@ body{
 
 
 
-/****Stuff at the bottom of the page*****/
+/****Bottom Link*****/
 .portfolio-page-content{
     font-family: 'Lobster';
     font-size: 2.5em;
@@ -137,8 +223,103 @@ body{
 .portfolio-page-content h1, h2, a{
     text-shadow: 4px 4px white;
 }
-.portfolio-page-content a.jump{
-   color: blue; 
-   scroll-behavior: auto;
+
+/**************MOBILE FRIENDLY STUFF*****************/
+@media screen and (max-width: 1100px)
+{
+    /******Portfolio Header******/
+    .portfolio-header{
+        font-size: 1.5em;
+    }
+    .portfolio-header h1{
+        text-shadow: 3px 3px white;
+        margin-top: 3.5em;
+
+    }
+    .portfolio-header p{
+        text-shadow: 1px 1px white;
+    }
+    
+    
+    /*****REPOSITORY FIRST ROW OF 3******/
+
+    
+    .repo-grid img{
+        border-radius: 40px;
+        border: 2px solid black;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .repo-grid img.gif1{
+        margin-right: 0;
+    }
+    .repo-grid img.gif3{
+        margin-left: 0;
+    }
+   
+    .repo-grid li{
+        display: block;
+        font-size: 1em;
+        letter-spacing: 2.5px;
+    
+    }
+    .third-row-repo-grid img.gif1{
+        margin: 0px;
+    }
+   
+
+
+    /****Bottom Link*****/
+    .portfolio-page-content{
+        margin-top: 2rem;
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 800px)
+{
+    .ham_menu{
+        display: block !important;
+    }
+    .navbar-btn{
+        display: block;
+        margin-top: -2rem;
+    }
    
 }
+@media screen and (min-width:800px) {
+    .full-navbar{
+        display: block !important;
+    }
+}
+/* RESPONSIVE LAYER */
+@media screen and (max-width:800px) {
+    /******NAVBAR STUFF******/
+    .full-navbar{
+        display: none;
+    }
+    .navbar li{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        display: block;
+    }
+    .navbar a{
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 5px;
+        background: rgba(76, 59, 158, 0.514);
+    }
+    .ham_menu{
+        display: block !important;
+    }
+    .navbar-btn{
+        display: block;
+        margin-top: -2rem;
+    }
+    .navbar{
+        width: 100%;
+    }
+    /****** END OF NAVBAR STUFF******/
+    
+
+  }
+/* RESPONSIVE LAYER */
