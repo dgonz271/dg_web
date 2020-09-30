@@ -5,81 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Daniel Gonzalez Portfolio</title>
+    <link rel="icon" href="../assets/img/favicon.jpg">
     <link rel="stylesheet" type="text/css" href="../assets/css/portfolio.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/assets/js/navbar.js"></script>
+     <!-- CSS only -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 </head>
 <body>
     <!----------------NAVIGATION BAR--------------->
-    <div class="navbar-container">
-            <div class="name">
-                <a href="../index.html">Daniel Gonzalez</a>
-            </div>
-            <div class="navbar">
-                <ul class="navbar-btn">
-                    <div class="group-ham">
-                        <div class="ham_menu"></div>
-                        <div class="ham_menu"></div>
-                        <div class="ham_menu"></div>
-                    </div>
-                </ul>
-                <ul class="full-navbar" id="full-nav">
-                    <li>
-                        <a href="../index.html#about-jump">About </a>
-                    </li>
-                    <li>
-                        <a href="../assets/pdf/Gonzalez, Daniel - Resume.pdf" target="_blank"> Resume </a>
-                    </li>
-                    <li>
-                        <a href="portfolio.html">Portfolio </a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact </a>
-                    </li>
-                </ul>
-            </div>
-        </div> 
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="name">
+            <a class="navbar-brand" href="../index.html">Daniel Gonzalez</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#about-jump">About </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../assets/pdf/Gonzalez, Daniel - Resume.pdf" target="_blank">Resume </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact </a>
+                </li>
+            </ul>
+        </div>
+    </nav> 
+    
+    
     <div style="text-align: center" class="portfolio-header">
         <h1>My Portfolio</h1>
         <p>Below, you will find my various projects; click a name to check out its github repository.</p>
     </div>
-    <div style="text-align: center" class="repo-grid">
-        <div class="first-row-repo-grid">
-            <span id="firstRow">
-                <ul>
-                    <li><a class = "name1" href = "https://www.github.com/dgonz271/MyJabber"target="_blank">MyJabber</a></li>
-                    <li><a class = "name2" href = "https://www.github.com/dgonz271/Gramify"target="_blank">Gramify</a></li>
-                    <li><a class = "name3" href = "https://www.github.com/dgonz271/Coolflix"target="_blank">Coolflix</a></li>
-                </ul>
-                <div class="first-row-repo-grid-img">
-                    <img class = "gif1"src='../assets/img/MyJabberPart2Gif.gif' title='MyJabber Walkthrough' width='200px' alt='Video Walkthrough'/> 
-                    <img class = "gif2"src='../assets/img/gramify_part2.gif' title='Gramify Walkthrough' width='200px' height='428px' alt='Video Walkthrough'/> 
-                    <img class = "gif3"src='../assets/img/coolflix_part2.gif' title='Coolflix Walkthrough' width='200px' height='428px' alt='Video Walkthrough'/> 
-                </div>
-            </span>
-        </div>
-        <div class="second-row-repo-grid">
-            <ul>
-                <li><a class = "name1" href = "https://www.github.com/dgonz271/PasswordGenerator"target="_blank">Password Generator</a></li>
-                <li><a class = "name2" href = "https://www.github.com/dgonz271/SavingsCalculator"target="_blank">Savings Calculator</a></li>
-                <li><a class = "name3" href = "https://www.github.com/dgonz271/ToDoApp"target="_blank">To-Do App</a></li>
-            </ul>
-            <div class="second-row-repo-grid-img">
-                <img class = "gif1"src='../assets/img/Password_Generator_gif.gif' title='Password Generator Walkthrough' width='200px' height='428px' alt='Video Walkthrough'/> 
-                <img class = "gif2"src='../assets/img/SavingsCalculatorGif.gif' title='Savings Calculator Walkthrough' width='200px' height='428px' alt='Video Walkthrough'/> 
-                <img class = "gif3"src='../assets/img/ToDoAppGif.gif' title='ToDoApp Walkthrough' width='200px' height='428px' alt='Video Walkthrough'/> 
+
+    <!-------------------Start of projects------------------>
+    <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm bg-transparent">
+                <div class="card-header bg-transparent text-center"><a href="https://www.github.com/dgonz271/MyJabber" target="_blank" class="myjabber">MyJabber</a></div>
+                <img class="card-img" src='../assets/img/MyJabberPart2Gif.gif' title='MyJabber Walkthrough' width='200px' alt='Video Walkthrough'/>
+              <div class="card-body bg-transparent">
+                <p class="card-text">MyJabber is an android app that allows a user to view their Twitter timeline. The app utilizes Twitter REST API.</p>
+              </div>
             </div>
-        </div>
-        <div class="third-row-repo-grid">
-            <ul>
-                <li><a class = "name1" href = "https://www.github.com/dgonz271/FlashcardApp"target="_blank">Flashcard App</a></li>
-            </ul>                   
-            <div class="third-row-repo-grid-img">
-                <img class = "gif1"src='../assets/img/FlashcardAppGif.gif' title='FlashcardApp Walkthrough' width='200px' height='428px'alt='Video Walkthrough'/> 
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm bg-transparent">
+                <div class="card-header bg-transparent text-center"><a href = "https://www.github.com/dgonz271/Gramify"target="_blank" class="gramify">Gramify</a></div>
+                <img class="card-img" src='../assets/img/gramify_part2.gif' title='Gramify Walkthrough' width='200px' alt='Video Walkthrough'/>
+              <div class="card-body bg-transparent">
+                <p class="card-text">Gramify is an android photo sharing app similar to Instagram but using Parse as its backend.
+
+                </p>
+              </div>
             </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm bg-transparent">
+                <div class="card-header bg-transparent text-center"><a href = "https://www.github.com/dgonz271/Coolflix"target="_blank" class="coolflix">Coolflix</a></div>
+                <img class="card-img" src='../assets/img/coolflix_part2.gif' title='Coolflix Walkthrough' width='200px' alt='Video Walkthrough'/>
+              <div class="card-body bg-transparent">
+                <p class="card-text">Coolflix is an android app that allows users to browse movies from the The Movie Database API.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm bg-transparent">
+                <div class="card-header bg-transparent text-center"><a href = "https://www.github.com/dgonz271/PasswordGenerator"target="_blank" class="passgen">Password Generator</a></div>
+                <img class="card-img" src='../assets/img/Password_Generator_gif.gif' title='Password Generator Walkthrough' width='200px' alt='Video Walkthrough'/>
+              <div class="card-body bg-transparent">
+                <p class="card-text">Password Generator is an android app that generates an intricate, 9-character password composed of 3 uppercase letters, 3 lowercase letters, and 3 digits.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm bg-transparent">
+                <div class="card-header bg-transparent text-center"><a href = "https://www.github.com/dgonz271/SavingsCalculator"target="_blank" class="savecalc">Savings Calculator</a></div>
+                <img class="card-img" src='../assets/img/SavingsCalculatorGif.gif' title='SavingsCalculator Walkthrough' width='200px' alt='Video Walkthrough'/>
+              <div class="card-body bg-transparent">
+                <p class="card-text">Savings Calculator is an android app that calculates how much money will be saved after a period of time.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm bg-transparent">
+                <div class="card-header bg-transparent text-center"><a href = "https://www.github.com/dgonz271/ToDoApp"target="_blank" class="todoapp">To-Do App</a></div>
+                <img class="card-img" src='../assets/img/ToDoAppGif.gif' title='ToDoApp Walkthrough' width='200px' alt='Video Walkthrough'/>
+              <div class="card-body bg-transparent">
+                <p class="card-text">To-Do App is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm bg-transparent">
+                <div class="card-header bg-transparent text-center"><a href = "https://www.github.com/dgonz271/FlashcardApp"target="_blank" class="flashapp">Flashcard App</a></div>
+                <img class="card-img" src='../assets/img/FlashcardAppGif.gif' title='FlashcardApp Walkthrough' width='200px' alt='Video Walkthrough'/>
+              <div class="card-body bg-transparent">
+                <p class="card-text">Flashcard App is a Q&A flashcard app that allows users to add cards to review what they wish</p>
+              </div>
+            </div>
+          </div>
+          
         </div>
+      </div>
     </div>
+    <!-------------------End of projects------------------>
+
+
     
     <div style="text-align: center" class="portfolio-page-content">
         <a href="../index.html">Return To Homepage</a>
@@ -87,4 +137,11 @@
     
         
 </body>
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 </html>
