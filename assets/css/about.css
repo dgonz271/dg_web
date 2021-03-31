@@ -20,7 +20,7 @@ body{
 }
 .navbar a{
     text-decoration: none;
-    color: black;
+    color: rgb(202, 43, 43);
     letter-spacing: 2px;
     font-size: 1.5em;
 }
@@ -95,13 +95,15 @@ body{
 
 /*-------------About page under navbar-----------------*/
 .about-section{
-    margin-top: 20em;
-    margin-bottom: 70em;
+    /* margin-top: 20em; */
+    /* margin-bottom: 70em; */
+    margin-bottom: 17em;
+
 }
 .about-title{
     position: absolute;
-    margin-top: 15em;
-    margin-left: 15em;
+    margin-top: 8em;
+    margin-left: 10em;
     /* float: left; */
 }
 .about-title h1{
@@ -114,11 +116,11 @@ body{
 }
 .about-me-text{
     position: relative;
-    float: right;
+    /* float: right; */
     border: 2px solid white;
     border-radius: 25px;
     padding: 0em 2em;
-    margin: 10em 10em 10em 50em;
+    margin: 10em 10em 10em 10em;
     /* margin-top: 10em; */
     /* margin-left: 50em; */
     /* margin-right: 10em; */
@@ -128,7 +130,7 @@ body{
     font-size: 1.5em; 
     color: white;
     text-shadow: 2px 2px black;
-    background: rgba(28, 33, 34, 0.418);
+    background: rgba(28, 33, 34, 0.658);
     font-weight: bold;
     letter-spacing: 2px;
     text-align: justify;
